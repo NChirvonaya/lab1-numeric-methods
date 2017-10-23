@@ -202,7 +202,7 @@ double norm2(const std::vector<double>& v)
 	double res(0.0);
 
 	for (int i(0); i < v.size(); ++i) {
-		res = std::max(res, abs(v[i]));
+		res = std::max(res, std::abs(v[i]));
 	}
 
 	return res;
